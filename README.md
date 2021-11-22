@@ -1,4 +1,7 @@
 # Sentinel 2 Data Fetcher
+This Python library simplifies the download of satellite images from the Copernicus Sentinel 2 satellite.
+The data are feed from the Google storage [Sentinel-2 data](https://cloud.google.com/storage/docs/public-datasets/sentinel-2).
+Please feel free to contact if you found issues or have any succections for improvements.
 
 <a href="https://pypi.python.org/pypi/sat-mapping-cyborg-ai" rel="nofollow">
 <img alt="pypi" src="https://img.shields.io/badge/pypi-0.0.37-success">
@@ -35,12 +38,12 @@
     ```
 
 - Start the Download. (Note: One year needs around 110 GB Disk Space.)
-  > The download uses gsutil so if there is no gsutil configuration (.boto) in your home directory, 
-  > gsutil config will be called to generate one.
-  > Gsutil config asks the user for a token and a project id.
+  - The download uses Google gsutil if there is no gsutil configuration (.boto) in your home directory, gsutil config will be called to generate one.  
+  - Gsutil config asks the user for a token and a Google project id. 
+  - For tiles see [Sentinel-2 data](https://cloud.google.com/storage/docs/public-datasets/sentinel-2).
 
     ```python 
-    download(paths, years=[2019], tiles=["32TMT"], months=[7])
+    download(paths, years=[2019], tiles=["32TMT"], months=[7, 11])
     ```
   
 - Load a folder.
