@@ -1,7 +1,7 @@
 # Sentinel 2 Data Fetcher
-This Python library simplifies the download of satellite images from the Copernicus Sentinel 2 satellite.
-The data are feed from the Google storage [Sentinel-2 data](https://cloud.google.com/storage/docs/public-datasets/sentinel-2).
-Please feel free to contact if you found issues or have any succections for improvements.
+This Python library simplifies the download of satellite images from the Copernicus Sentinel-2 satellite.
+The data are fetched from the Google cloud storage [Sentinel-2 data](https://cloud.google.com/storage/docs/public-datasets/sentinel-2).
+Please feel free to contact us if you find issues or have any suggestions for improvements. See for an example tests/main.py.
 
 <a href="https://pypi.python.org/pypi/sat-mapping-cyborg-ai" rel="nofollow">
 <img alt="pypi" src="https://img.shields.io/badge/pypi-0.0.37-success">
